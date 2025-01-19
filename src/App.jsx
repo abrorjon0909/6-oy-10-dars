@@ -1,6 +1,7 @@
 import Pagination from "@mui/material/Pagination";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import Future from "./Components";
 
 function App() {
   const [comments, setComments] = useState([]);
@@ -66,7 +67,10 @@ function App() {
         color="primary"
         page={current} 
       />
+      <hr />
+      <Future></Future>
     </div>
+    
   );
 }
 
